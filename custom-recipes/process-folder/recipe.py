@@ -34,7 +34,7 @@ in_df = pd.DataFrame(folder_info["items"]).sort_values(by='lastModified', ascend
 #
 # Only import xlsx files
 #
-df = in_df[indf.path.str.contains(".xlsx")]
+df = in_df[in_df.path.str.contains(".xlsx")]
 
 #
 # Process filenames with Regex
