@@ -1,0 +1,65 @@
+{
+    // Meta data for display purposes
+    "meta": {
+        "label": "Process folder",
+        "description": "Parses a folder and imports only the most recent file.",
+        "icon": "icon-table",
+        "iconColor": "sky"
+    },
+
+    "kind": "PYTHON",
+    
+    "selectableFromFolder": "input_folder",
+    
+    "inputRoles": [
+        {
+            "name": "input_folder",
+            "label": "Name of Input Folder",
+            "description": "Folder director that you would like to import the first n number of files.",
+            "acceptsDataset": false,
+            "acceptsManagedFolder": true
+        }
+    ],
+
+    "outputRoles": [
+        {
+            "name": "main_output",
+            "label": "Output Dataset(s) Name",
+            "description": "Name of the dataset.",
+            "arity": "UNARY",
+            "required": false,
+            "acceptsDataset": true
+        }
+    ],
+
+    "params": [
+        {
+            "name": "sep1",
+            "label": "Ignore to import newest file regardless of file name.",
+            "type": "SEPARATOR"
+        },
+         
+        {
+          "name": "regex",
+          "type": "BOOLEAN",
+          "label": "Process with Regex?",
+          "default": false
+        },
+        {
+          "type": "STRING",
+          "name": "regexpression",
+          "label": "Regural Expression Inclusion Rule:",
+          "defaultValue": ".*",
+          "visibilityCondition": "model.regex"
+        }
+    ],
+
+    // The field "resourceKeys" holds a list of keys that allows to limit the number
+    // of concurrent executions and activities triggered by this recipe.
+    //
+    // Administrators can configure the limit per resource key in the Administration > Settings > Flow build
+    // screen.
+
+    "resourceKeys": []
+
+}

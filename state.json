@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {
+      "ts": 1651166721070,
+      "action": "INSTALL",
+      "user": "jgreen"
+    }
+  ],
+  "gitState": {
+    "enabled": false
+  }
+}

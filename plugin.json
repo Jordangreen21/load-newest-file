@@ -1,0 +1,29 @@
+{
+    // Plugin identifiers are globally unique and only contain A-Za-z0-9_-
+    "id": "newest-file",
+
+    // It is highly recommended to use Semantic Versioning
+    "version": "1.0.0",
+
+    // Meta data for display purposes:
+    "meta": {
+        // label: name of the plugin as displayed, should be short
+        "label": "Load Newest File",
+
+        // description: longer string to help end users understand what this plugin does
+        "description": "Load the Last Modified File in a Folder. Currently only works for xlsx files.",
+
+        "author": "Dataiku (Jordan Green)",
+
+        // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
+        "icon": "icon-table",
+
+        // List of tags for filtering the list of plugins
+        "tags": [], //for example: ["Machine Learning", "NLP"]
+
+        // URL where the user can learn more about the plugin
+        "url": "www.dataiku.com",
+
+        "licenseInfo": "Apache Software License"
+    }
+}
