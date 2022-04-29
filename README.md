@@ -1,6 +1,10 @@
 ## Introduction
 This custom recipe reads a Dataiku [Mangaged Folder](https://knowledge.dataiku.com/latest/courses/folders/managed-folders.html) and imports the most recent file. The current version only supports Excel files.
 
+## Import the Plugin
+Fetch the plugin from this repository from the Plugin Store within your Dataiku environment. 
+![Fetch Plugin](/Fetch_Repo.png "fetch_plugin")
+
 ## Basic Usage
 1. Create a new Managed Folder
 2. Modify the Settings
