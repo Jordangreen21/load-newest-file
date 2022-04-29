@@ -29,7 +29,12 @@ folder_id = get_input_names_for_role('input_folder')[0].split(".")[1]
 folder = project.get_managed_folder(folder_id)
 folder_info = folder.list_contents()
 path = folder_info["folderPath"]
-df = pd.DataFrame(folder_info["items"]).sort_values(by='lastModified', ascending=False).reset_index()
+in_df = pd.DataFrame(folder_info["items"]).sort_values(by='lastModified', ascending=False).reset_index()
+
+#
+# Only import xlsx files
+#
+df = in_df[indf.path.str.contains(".xlsx")]
 
 #
 # Process filenames with Regex
