@@ -22,7 +22,7 @@
         "tags": [], //for example: ["Machine Learning", "NLP"]
 
         // URL where the user can learn more about the plugin
-        "url": "www.dataiku.com",
+        "url": "https://github.com/Jordangreen21/load-newest-file",
 
         "licenseInfo": "Apache Software License"
     }
